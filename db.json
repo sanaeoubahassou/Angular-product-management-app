@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "name": "Book",
+      "price": 44,
+      "quantity": 10,
+      "selected": true,
+      "available": true,
+      "id": 1
+    },
+    {
+      "name": "Computer",
+      "price": 234,
+      "quantity": 200,
+      "selected": false,
+      "available": false,
+      "id": 2
+    },
+    {
+      "name": "Sac",
+      "price": 499,
+      "quantity": 30,
+      "selected": false,
+      "available": true,
+      "id": 7
+    },
+    {
+      "name": "Table",
+      "price": "100",
+      "quantity": "14",
+      "available": true,
+      "selected": true,
+      "id": 8
+    },
+    {
+      "name": "Keybord",
+      "price": "77",
+      "quantity": "9",
+      "available": false,
+      "selected": false,
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "House",
+      "price": "9999",
+      "quantity": "5",
+      "available": true,
+      "selected": true
+    }
+  ]
+}
