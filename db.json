@@ -12,7 +12,7 @@
       "name": "Computer",
       "price": 234,
       "quantity": 200,
-      "selected": false,
+      "selected": true,
       "available": false,
       "id": 2
     },
@@ -20,7 +20,7 @@
       "name": "Sac",
       "price": 499,
       "quantity": 30,
-      "selected": false,
+      "selected": true,
       "available": true,
       "id": 7
     },
@@ -29,7 +29,7 @@
       "price": "100",
       "quantity": "14",
       "available": true,
-      "selected": true,
+      "selected": false,
       "id": 8
     },
     {
@@ -43,10 +43,10 @@
     {
       "id": 10,
       "name": "House",
-      "price": "9999",
+      "price": "999",
       "quantity": "5",
       "available": true,
-      "selected": true
+      "selected": false
     }
   ]
 }

@@ -1,0 +1,34 @@
+<!-- recuperer ces donnes dans la varible resultk
+dans product$ on dataSatate alors dans result on aura la m chosse-->
+<ng-container *ngIf="(productsInput$ | async) as result" [ngSwitch]="result.dataState">
+    <ng-container *ngSwitchCase="DataStateEnum.LOADING">
+        Loading data ...
+    </ng-container>
+    <ng-container *ngSwitchCase="DataStateEnum.ERROR">
+        <div class="alert-danger">
+            {{result.errorMessage}}
+        </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="DataStateEnum.LOADED">
+        <table class="table">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>price</th>
+                <th>quantity</th>
+                <th>Selected</th>
+                <th>Available</th>
+                <th>Select</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+            
+            <app-product-item [product]="p" (eventEmiter)="onActionEvent($event)" 
+             *ngFor="let p of result.data" style="display: contents;">
+
+            </app-product-item>
+            
+        </table>
+    </ng-container>
+</ng-container>

@@ -14,7 +14,6 @@ export class EditProductComponent implements OnInit {
   productId!:number;
   productFormGroup?:FormGroup;
   submitted: boolean =false;
-
   constructor(private activatedRoute:ActivatedRoute,
     private productsService: ProductsService,
     private fb:FormBuilder) {
@@ -34,7 +33,6 @@ export class EditProductComponent implements OnInit {
       })
     });
   }
-
   onUpdateProduct(){
     this.productsService.updateProduct(this.productFormGroup?.value)
     .subscribe(data=>{

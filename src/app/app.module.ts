@@ -11,6 +11,9 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
+import { ProductsNavBarComponent } from './components/products/products-nav-bar/products-nav-bar.component';
+import { ProductListComponent } from './components/products/product-list/product-list.component';
+import { ProductItemComponent } from './components/products/product-list/product-item/product-item.component';
 
 
 
@@ -21,7 +24,10 @@ import { EditProductComponent } from './components/edit-product/edit-product.com
     HomeComponent,
     ProductsComponent,
     ProductAddComponent,
-    EditProductComponent
+    EditProductComponent,
+    ProductsNavBarComponent,
+    ProductListComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
